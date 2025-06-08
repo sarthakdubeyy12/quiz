@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 70px;
+  background: linear-gradient(90deg, #264f52		);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover;   /* Ensures the image covers the entire circle neatly */
+}
+
+
+.brand-name {
+  font-weight: 600;
+  font-size: 25px;
+  color: #e1b382;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu li:hover {
+  color: #f0c040;
+}
+
+.navbar-menu .active {
+  font-weight: 600;
+  color: #ffd700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.navbar-right {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #ffd700;
+}
